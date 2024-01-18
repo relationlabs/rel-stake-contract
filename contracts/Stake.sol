@@ -2,24 +2,25 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+// import "@openzeppelin/contracts/access/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.9/contracts/access/Ownable.sol";
 import "./interfaces/IStake.sol";
 
 contract Stake is IStake, Ownable {
     uint256[] public epoch_reward = [
-        10 ether,
-        9 ether,
-        9 ether,
-        8 ether,
-        8 ether,
-        7 ether,
-        7 ether,
-        7 ether,
-        7 ether,
-        7 ether,
-        7 ether,
-        7 ether,
-        7 ether
+        1000000 ether,
+        900000 ether,
+        900000 ether,
+        800000 ether,
+        800000 ether,
+        700000 ether,
+        700000 ether,
+        700000 ether,
+        700000 ether,
+        700000 ether,
+        700000 ether,
+        700000 ether,
+        700000 ether
     ];
 
     uint256 public constant DEFAULT_EPOCH_REWARD = 7 ether;
