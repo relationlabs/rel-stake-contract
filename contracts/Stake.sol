@@ -24,7 +24,7 @@ contract Stake is IStake, Ownable {
         700000 ether
     ];
 
-    uint256 public constant DEFAULT_EPOCH_REWARD = 7 ether;
+    uint256 public constant DEFAULT_EPOCH_REWARD = 700000 ether;
 
     uint256 public epoch_index;
 
